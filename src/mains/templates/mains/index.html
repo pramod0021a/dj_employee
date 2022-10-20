@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<h1>Office Employee Management System!</h1>
+      <hr>
+      <a class="btn btn-primary" href="{% url 'mains:add_emp' %}" role="button">Add An Employee</a>
+      <a class="btn btn-primary" href="{% url 'mains:remove_emp' %}" role="button">Remove An Employee</a>
+      <a class="btn btn-primary" href="{% url 'mains:filter_emp' %}" role="button">Filter Employee Details</a>
+      <a class="btn btn-primary" href="{% url 'mains:all_emp' %}" role="button">View All Employee</a>
+
+{% endblock content %}
